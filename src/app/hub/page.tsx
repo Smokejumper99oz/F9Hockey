@@ -3,34 +3,40 @@ import { siteConfig } from "@/lib/site-config";
 
 const hubCards = [
   {
-    title: "Register",
-    description: "Sign up for the season and reserve your spot.",
-    href: "#",
+    title: "Upcoming Events",
+    description:
+      "Next games, practices, and team nights—so nobody misses a puck drop or a bus call.",
+    href: "/events",
   },
   {
-    title: "Pay Fees",
-    description: "Team dues and payments (link coming soon).",
-    href: "#",
-  },
-  {
-    title: "View Schedule",
-    description: "Games, ice times, and key dates.",
+    title: "Schedule",
+    description:
+      "League sheet, ice times, and key dates for the whole season in one view.",
     href: "/schedule",
   },
   {
-    title: "Team Roster",
-    description: "Players and positions.",
+    title: "Pay Fees",
+    description:
+      "Team dues, jersey kit, and tournament splits—keep your account square with the bench.",
+    href: "/fees",
+  },
+  {
+    title: "Roster",
+    description:
+      "Skaters, positions, and numbers—know who you're dressing beside before you hit the room.",
     href: "/roster",
   },
   {
-    title: "Contact Captain",
-    description: "Reach the team leadership.",
-    href: "/contact",
+    title: "Past Events / Photos",
+    description:
+      "Wins, road trips, and locker-room shots—scroll the season after the final horn.",
+    href: "/photos",
   },
   {
-    title: "Photos / Social",
-    description: "Highlights and community links.",
-    href: "#",
+    title: "Contact",
+    description:
+      "Captains and managers for subs, absences, and anything that doesn't belong in the group chat.",
+    href: "/contact",
   },
 ] as const;
 
@@ -42,8 +48,7 @@ export default function HubPage() {
           Team hub
         </h1>
         <p className="mt-3 text-zinc-400">
-          Everything for {siteConfig.fullName}—quick access to registration,
-          payments, schedule, roster, and contacts.
+          {`Operations home for ${siteConfig.fullName}—what's next on the ice, who's on the sheet, and how to stay paid, informed, and in touch.`}
         </p>
       </div>
 
