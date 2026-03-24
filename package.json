@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:fresh": "node scripts/clean-next.mjs && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "node scripts/clean-next.mjs"
   },
   "dependencies": {
     "react": "^18",
