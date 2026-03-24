@@ -32,52 +32,54 @@ export default function HomePage() {
     <div className="relative isolate overflow-x-hidden">
       <HomeAtmosphere />
       <div className="relative z-10 flex flex-col">
-      <section className="relative h-[70vh] min-h-[70vh] overflow-hidden border-b border-zinc-800/80">
-        <div className="absolute inset-0">
+      <section className="relative w-full overflow-hidden border-b border-zinc-800/80">
+        <div className="relative h-[65vh] min-h-[16rem] w-full max-h-[70vh]">
           <Image
             src="/images/team-hero.png"
             alt={`${siteConfig.fullName} team photo on the ice`}
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[82%_34%] sm:object-[84%_32%] lg:object-[86%_30%]"
+            className="object-cover object-center"
+          />
+          <div
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_85%_at_50%_45%,transparent_55%,rgba(0,0,0,0.14)_100%)]"
+            aria-hidden
+          />
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-[28%] bg-gradient-to-t from-black/25 to-transparent"
+            aria-hidden
+          />
+          <div
+            className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]"
+            aria-hidden
           />
         </div>
-        <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 via-[48%] to-transparent to-[88%]"
-          aria-hidden
-        />
-        <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-emerald-950/12 via-transparent to-transparent"
-          aria-hidden
-        />
-        <div
-          className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10"
-          aria-hidden
-        />
+      </section>
 
-        <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl flex-col justify-end px-4 pb-8 pt-14 sm:px-6 sm:pb-10 sm:pt-16 lg:justify-center lg:py-12">
-          <div className="max-w-2xl lg:max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-400/95 drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)]">
+      <section className="border-b border-zinc-800/80">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:py-20">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-500/90">
               {siteConfig.siteName}
             </p>
-            <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-white drop-shadow-[0_4px_32px_rgba(0,0,0,0.9)] sm:text-5xl sm:leading-[1.06] lg:text-6xl">
+            <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-zinc-50 sm:text-5xl sm:leading-[1.06] lg:text-6xl">
               {siteConfig.fullName}
             </h1>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-zinc-200/95 drop-shadow-[0_2px_16px_rgba(0,0,0,0.85)] sm:text-lg">
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-zinc-400 sm:text-lg">
               Adult hockey built around camaraderie, competition, and showing up
               for each other—on and off the ice.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
               <Link
                 href="/hub"
-                className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-black/50 ring-1 ring-emerald-400/25 transition hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
+                className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-emerald-950/40 ring-1 ring-emerald-400/25 transition hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
               >
                 Open Team Hub
               </Link>
               <Link
                 href="/schedule"
-                className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-zinc-950/55 px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-black/30 backdrop-blur-sm transition hover:border-white/35 hover:bg-zinc-950/75"
+                className="inline-flex items-center justify-center rounded-xl border border-zinc-700 bg-zinc-900/60 px-7 py-3.5 text-base font-semibold text-zinc-200 transition hover:border-zinc-600 hover:bg-zinc-800/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
               >
                 View schedule
               </Link>
