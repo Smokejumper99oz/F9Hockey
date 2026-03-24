@@ -32,7 +32,7 @@ export default function HomePage() {
     <div className="relative isolate overflow-x-hidden">
       <HomeAtmosphere />
       <div className="relative z-10 flex flex-col">
-      <section className="relative overflow-hidden border-b border-zinc-800/80">
+      <section className="relative h-[70vh] min-h-[70vh] overflow-hidden border-b border-zinc-800/80">
         <div className="absolute inset-0">
           <Image
             src="/images/team-hero.png"
@@ -40,7 +40,7 @@ export default function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[center_42%] sm:object-[center_38%] lg:object-[center_36%]"
+            className="object-cover object-[82%_34%] sm:object-[84%_32%] lg:object-[86%_30%]"
           />
         </div>
         <div
@@ -56,7 +56,7 @@ export default function HomePage() {
           aria-hidden
         />
 
-        <div className="relative z-10 mx-auto flex min-h-[min(100svh,52rem)] w-full max-w-6xl flex-col justify-end px-4 pb-12 pt-28 sm:min-h-[min(100svh,44rem)] sm:px-6 sm:pb-16 sm:pt-32 md:min-h-[min(92vh,52rem)] lg:min-h-[min(88vh,56rem)] lg:justify-center lg:py-24 xl:py-28">
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl flex-col justify-end px-4 pb-8 pt-14 sm:px-6 sm:pb-10 sm:pt-16 lg:justify-center lg:py-12">
           <div className="max-w-2xl lg:max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-400/95 drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)]">
               {siteConfig.siteName}
