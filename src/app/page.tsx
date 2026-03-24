@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HomeAtmosphere } from "@/components/home-atmosphere";
 import { InstagramLatestSection } from "@/components/instagram-latest-section";
 import { siteConfig } from "@/lib/site-config";
 
@@ -28,7 +29,9 @@ const actionCards = [
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col">
+    <div className="relative isolate overflow-x-hidden">
+      <HomeAtmosphere />
+      <div className="relative z-10 flex flex-col">
       <section className="relative overflow-hidden border-b border-zinc-800/80">
         <div className="absolute inset-0">
           <Image
@@ -127,6 +130,7 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+      </div>
     </div>
   );
 }

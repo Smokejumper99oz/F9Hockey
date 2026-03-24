@@ -18,3 +18,11 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Homepage atmosphere: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .home-atmosphere,
+  .home-atmosphere * {
+    animation: none !important;
+  }
+}
