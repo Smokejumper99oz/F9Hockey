@@ -59,11 +59,11 @@ export default function HomePage() {
 
       <section className="border-b border-zinc-800/80">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:py-20">
-          <div className="max-w-3xl">
+          <div className="max-w-5xl">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-500/90">
               {siteConfig.siteName}
             </p>
-            <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-zinc-50 sm:text-5xl sm:leading-[1.06] lg:text-6xl">
+            <h1 className="mt-4 max-w-full text-[clamp(1.1rem,2.4vw+0.65rem,3.75rem)] font-bold leading-[1.08] tracking-tight text-zinc-50 whitespace-nowrap max-[380px]:whitespace-normal max-[380px]:text-balance sm:leading-[1.06]">
               {siteConfig.fullName}
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-zinc-400 sm:text-lg">
