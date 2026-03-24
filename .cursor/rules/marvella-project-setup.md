@@ -23,3 +23,12 @@ description: Marvella repo layout, root app, and dev workflow (lowercase folders
 
 - Avoids Windows nested-repo problems and duplicate `.git` folders.
 - Keeps the same developer workflow across all Marvella products.
+
+## Troubleshooting
+- If Next.js dev server throws errors about missing modules, vendor-chunks, or `.next/server` files:
+  1. Stop the dev server
+  2. Delete the `.next` folder
+  3. Restart with `npm run dev`
+- If port issues occur:
+  - Stop running Node processes (`taskkill /f /im node.exe` on Windows)
+  - Restart `npm run dev`
