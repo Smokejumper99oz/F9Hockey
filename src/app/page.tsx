@@ -44,15 +44,11 @@ export default function HomePage() {
           />
         </div>
         <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/65 to-zinc-950/15 sm:from-zinc-950 sm:via-zinc-950/45 sm:to-transparent"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 via-[48%] to-transparent to-[88%]"
           aria-hidden
         />
         <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-zinc-950 from-25% via-transparent via-50% to-zinc-950/55"
-          aria-hidden
-        />
-        <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-br from-emerald-950/25 via-transparent to-transparent"
+          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-emerald-950/12 via-transparent to-transparent"
           aria-hidden
         />
         <div
