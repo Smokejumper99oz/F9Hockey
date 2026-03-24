@@ -30,46 +30,58 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       <section className="relative overflow-hidden border-b border-zinc-800/80">
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-emerald-950/30 via-transparent to-transparent" />
-        <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-14">
-            <div className="order-1 min-w-0">
-              <p className="text-sm font-semibold uppercase tracking-widest text-emerald-500/90">
-                {siteConfig.siteName}
-              </p>
-              <h1 className="mt-3 max-w-3xl text-4xl font-bold tracking-tight text-zinc-50 sm:text-5xl">
-                {siteConfig.fullName}
-              </h1>
-              <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
-                Adult hockey built around camaraderie, competition, and showing up
-                for each other—on and off the ice.
-              </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <Link
-                  href="/hub"
-                  className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-emerald-950/40 transition hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
-                >
-                  Open Team Hub
-                </Link>
-                <Link
-                  href="/schedule"
-                  className="inline-flex items-center justify-center rounded-xl border border-zinc-700 bg-zinc-900/60 px-6 py-3.5 text-base font-semibold text-zinc-200 transition hover:border-zinc-600 hover:bg-zinc-800/80"
-                >
-                  View schedule
-                </Link>
-              </div>
-            </div>
-            <div className="order-2 w-full">
-              <div className="relative mx-auto aspect-[5/3] w-full max-w-xl overflow-hidden rounded-xl border border-zinc-800/90 bg-zinc-900 shadow-2xl shadow-black/50 ring-1 ring-white/10 lg:max-w-none">
-                <Image
-                  src="/images/team-hero.png"
-                  alt={`${siteConfig.fullName} team photo on the ice`}
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover object-[center_38%]"
-                />
-              </div>
+        <div className="absolute inset-0">
+          <Image
+            src="/images/team-hero.png"
+            alt={`${siteConfig.fullName} team photo on the ice`}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[center_42%] sm:object-[center_38%] lg:object-[center_36%]"
+          />
+        </div>
+        <div
+          className="pointer-events-none absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/65 to-zinc-950/15 sm:from-zinc-950 sm:via-zinc-950/45 sm:to-transparent"
+          aria-hidden
+        />
+        <div
+          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-zinc-950 from-25% via-transparent via-50% to-zinc-950/55"
+          aria-hidden
+        />
+        <div
+          className="pointer-events-none absolute inset-0 bg-gradient-to-br from-emerald-950/25 via-transparent to-transparent"
+          aria-hidden
+        />
+        <div
+          className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10"
+          aria-hidden
+        />
+
+        <div className="relative z-10 mx-auto flex min-h-[min(100svh,52rem)] w-full max-w-6xl flex-col justify-end px-4 pb-12 pt-28 sm:min-h-[min(100svh,44rem)] sm:px-6 sm:pb-16 sm:pt-32 md:min-h-[min(92vh,52rem)] lg:min-h-[min(88vh,56rem)] lg:justify-center lg:py-24 xl:py-28">
+          <div className="max-w-2xl lg:max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-400/95 drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)]">
+              {siteConfig.siteName}
+            </p>
+            <h1 className="mt-4 text-4xl font-bold leading-[1.08] tracking-tight text-white drop-shadow-[0_4px_32px_rgba(0,0,0,0.9)] sm:text-5xl sm:leading-[1.06] lg:text-6xl">
+              {siteConfig.fullName}
+            </h1>
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-zinc-200/95 drop-shadow-[0_2px_16px_rgba(0,0,0,0.85)] sm:text-lg">
+              Adult hockey built around camaraderie, competition, and showing up
+              for each other—on and off the ice.
+            </p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
+              <Link
+                href="/hub"
+                className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-black/50 ring-1 ring-emerald-400/25 transition hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
+              >
+                Open Team Hub
+              </Link>
+              <Link
+                href="/schedule"
+                className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-zinc-950/55 px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-black/30 backdrop-blur-sm transition hover:border-white/35 hover:bg-zinc-950/75"
+              >
+                View schedule
+              </Link>
             </div>
           </div>
         </div>
