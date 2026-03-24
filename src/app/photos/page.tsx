@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { InstagramFeaturedCard } from "@/components/instagram-featured-card";
 import { PhotoGalleryCard } from "@/components/photo-gallery-card";
 import { pastPhotoEvents } from "@/lib/photos-data";
 
@@ -27,7 +28,11 @@ export default function PhotosPage() {
         </p>
       </header>
 
-      <ul className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+      <div className="mt-12">
+        <InstagramFeaturedCard />
+      </div>
+
+      <ul className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {sorted.map((item) => (
           <li key={item.id}>
             <PhotoGalleryCard item={item} />

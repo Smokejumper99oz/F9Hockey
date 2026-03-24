@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { InstagramLatestSection } from "@/components/instagram-latest-section";
 import { siteConfig } from "@/lib/site-config";
 
 const actionCards = [
@@ -83,6 +84,8 @@ export default function HomePage() {
           ))}
         </ul>
       </section>
+
+      <InstagramLatestSection />
 
       <section className="border-t border-zinc-800/80 bg-zinc-900/20">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
