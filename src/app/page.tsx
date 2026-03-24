@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { InstagramLatestSection } from "@/components/instagram-latest-section";
 import { siteConfig } from "@/lib/site-config";
@@ -31,29 +32,45 @@ export default function HomePage() {
       <section className="relative overflow-hidden border-b border-zinc-800/80">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-emerald-950/30 via-transparent to-transparent" />
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-          <p className="text-sm font-semibold uppercase tracking-widest text-emerald-500/90">
-            {siteConfig.siteName}
-          </p>
-          <h1 className="mt-3 max-w-3xl text-4xl font-bold tracking-tight text-zinc-50 sm:text-5xl">
-            {siteConfig.fullName}
-          </h1>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
-            Adult hockey built around camaraderie, competition, and showing up
-            for each other—on and off the ice.
-          </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <Link
-              href="/hub"
-              className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-emerald-950/40 transition hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
-            >
-              Open Team Hub
-            </Link>
-            <Link
-              href="/schedule"
-              className="inline-flex items-center justify-center rounded-xl border border-zinc-700 bg-zinc-900/60 px-6 py-3.5 text-base font-semibold text-zinc-200 transition hover:border-zinc-600 hover:bg-zinc-800/80"
-            >
-              View schedule
-            </Link>
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-14">
+            <div className="order-1 min-w-0">
+              <p className="text-sm font-semibold uppercase tracking-widest text-emerald-500/90">
+                {siteConfig.siteName}
+              </p>
+              <h1 className="mt-3 max-w-3xl text-4xl font-bold tracking-tight text-zinc-50 sm:text-5xl">
+                {siteConfig.fullName}
+              </h1>
+              <p className="mt-4 max-w-2xl text-lg leading-relaxed text-zinc-400">
+                Adult hockey built around camaraderie, competition, and showing up
+                for each other—on and off the ice.
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <Link
+                  href="/hub"
+                  className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-emerald-950/40 transition hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
+                >
+                  Open Team Hub
+                </Link>
+                <Link
+                  href="/schedule"
+                  className="inline-flex items-center justify-center rounded-xl border border-zinc-700 bg-zinc-900/60 px-6 py-3.5 text-base font-semibold text-zinc-200 transition hover:border-zinc-600 hover:bg-zinc-800/80"
+                >
+                  View schedule
+                </Link>
+              </div>
+            </div>
+            <div className="order-2 w-full">
+              <div className="relative mx-auto aspect-[5/3] w-full max-w-xl overflow-hidden rounded-xl border border-zinc-800/90 bg-zinc-900 shadow-2xl shadow-black/50 ring-1 ring-white/10 lg:max-w-none">
+                <Image
+                  src="/images/team-hero.png"
+                  alt={`${siteConfig.fullName} team photo on the ice`}
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-[center_38%]"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
