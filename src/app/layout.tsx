@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -17,11 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: siteConfig.siteName,
-    template: `%s | ${siteConfig.siteName}`,
-  },
-  description: `${siteConfig.fullName} — team hub, schedule, and roster.`,
+  title: "F9 Hockey",
+  description: "Frontier Airlines Hockey Club",
 };
 
 export default function RootLayout({
