@@ -3,14 +3,17 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { InstagramIcon } from "@/components/instagram-icon";
+import { INSTAGRAM_PROFILE_URL } from "@/lib/instagram-feature";
 import { siteConfig } from "@/lib/site-config";
 
 const nav = [
   { label: "Home", href: "/" },
-  { label: "Hub", href: "/hub" },
+  { label: "The Bench", href: "/hub" },
   { label: "Schedule", href: "/schedule" },
   { label: "Roster", href: "/roster" },
   { label: "Contact", href: "/contact" },
+  { label: "Login", href: "/login" },
 ] as const;
 
 export function SiteHeader() {
@@ -22,7 +25,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="text-lg font-bold tracking-tight text-zinc-100 transition hover:text-emerald-400"
+          className="text-lg font-bold leading-none tracking-tight text-zinc-100 transition hover:text-emerald-400"
           onClick={() => setOpen(false)}
         >
           {siteConfig.siteName}
@@ -48,6 +51,15 @@ export function SiteHeader() {
               </Link>
             );
           })}
+          <a
+            href={INSTAGRAM_PROFILE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-0.5 rounded-lg p-2 text-zinc-400 transition hover:bg-zinc-800/80 hover:text-pink-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+            aria-label="Follow us on Instagram"
+          >
+            <InstagramIcon className="h-[1.125rem] w-[1.125rem]" />
+          </a>
         </nav>
 
         <button
@@ -89,6 +101,18 @@ export function SiteHeader() {
                 </li>
               );
             })}
+            <li>
+              <a
+                href={INSTAGRAM_PROFILE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 rounded-lg px-3 py-3 text-base font-medium text-zinc-300 transition hover:bg-zinc-800/80"
+                onClick={() => setOpen(false)}
+              >
+                <InstagramIcon className="h-5 w-5 shrink-0 text-pink-400/90" />
+                Instagram
+              </a>
+            </li>
           </ul>
         </nav>
       ) : null}

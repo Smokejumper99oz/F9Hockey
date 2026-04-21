@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { InstagramFeaturedCard } from "@/components/instagram-featured-card";
 import { PhotoGalleryCard } from "@/components/photo-gallery-card";
 import { pastPhotoEvents } from "@/lib/photos-data";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Past Events & Photos | F9 Hockey",
@@ -16,15 +17,18 @@ export default function PhotosPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-      <header className="max-w-3xl">
+      <header className="max-w-4xl">
         <h1 className="text-3xl font-bold tracking-tight text-zinc-50 sm:text-4xl">
-          Past events &amp; photos
+          Past Events &amp; Photos
         </h1>
-        <p className="mt-4 text-lg leading-relaxed text-zinc-400">
-          Season highlights and galleries for{" "}
-          <span className="text-zinc-300">Frontier Airlines Hockey Club</span>.
-          Each card links to a future lightbox—covers will pull from team
-          storage when we wire it up.
+        <p className="mt-4 text-base leading-relaxed text-zinc-400 sm:text-lg">
+          <span className="block min-w-0 whitespace-nowrap overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+            Take a look back at the season with highlights, photos, and game-day moments from{" "}
+            {siteConfig.siteName.replace(/ /g, "\u00A0")}.
+          </span>
+          <span className="block">
+            From big plays to team memories, it’s all captured here.
+          </span>
         </p>
       </header>
 

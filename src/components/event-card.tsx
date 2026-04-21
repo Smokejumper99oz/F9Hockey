@@ -30,7 +30,7 @@ export function EventCard({ event }: EventCardProps) {
   const badge = statusStyles[event.registrationStatus];
 
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/60 shadow-lg shadow-black/20 transition duration-200 hover:-translate-y-0.5 hover:border-emerald-500/35 hover:bg-zinc-800/50 hover:shadow-emerald-950/10">
+    <article className="flex h-full flex-col overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/60 shadow-lg shadow-black/20 transition-colors duration-150 hover:border-emerald-500/50">
       <div className="relative h-36 w-full shrink-0 bg-zinc-800/80 sm:h-40">
         {event.imageUrl ? (
           // eslint-disable-next-line @next/next/no-img-element -- Supabase URLs later; add next/image + remotePatterns when ready
@@ -92,7 +92,7 @@ export function EventCard({ event }: EventCardProps) {
 
         <button
           type="button"
-          className="mt-5 w-full rounded-lg border border-zinc-700 bg-zinc-800/60 py-2.5 text-sm font-semibold text-zinc-200 transition hover:border-emerald-500/40 hover:bg-zinc-800 hover:text-emerald-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+          className="mt-5 w-full rounded-lg border border-zinc-700 bg-zinc-800/60 py-2.5 text-sm font-semibold text-zinc-200 transition-colors duration-150 hover:border-emerald-500/50 hover:text-emerald-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
         >
           View Details
         </button>
