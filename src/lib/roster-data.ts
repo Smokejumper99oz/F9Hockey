@@ -93,7 +93,7 @@ export const rosterPlayers: RosterPlayer[] = [
     jerseyNumber: 7,
     hockeyPosition: "Left Wing",
     photoUrl: "/images/players/zach-parks.png",
-    nhlTeam: { name: "Pittsburgh Penguins", logoAbbr: "PIT" },
+    nhlTeam: { name: "Philadelphia Flyers", logoAbbr: "PHI" },
   },
   {
     id: "p-06",
