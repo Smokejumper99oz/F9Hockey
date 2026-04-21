@@ -93,6 +93,7 @@ export const rosterPlayers: RosterPlayer[] = [
     jerseyNumber: 7,
     hockeyPosition: "Left Wing",
     photoUrl: "/images/players/zach-parks.png",
+    photoObjectPosition: "center 16%",
     nhlTeam: { name: "Philadelphia Flyers", logoAbbr: "PHI" },
   },
   {
@@ -104,6 +105,7 @@ export const rosterPlayers: RosterPlayer[] = [
     hockeyPosition: "Water Boy/Forward",
     photoUrl: "/images/players/blake-eric-wolanin.png",
     photoZoom: 1.28,
+    photoObjectPosition: "center 14%",
     nhlTeam: { name: "Boston Bruins", logoAbbr: "BOS" },
   },
   {
