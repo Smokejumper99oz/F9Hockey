@@ -104,12 +104,14 @@ export const pastPhotoEvents: PastPhotoEvent[] = [
     cityState: "Nashville, TN",
     coverImageUrl: "/images/boom-boom-cup-2025-team.png",
     shortDescription:
-      "Frontier Airlines Hockey Club at the 2025 Boom Boom Cup (Airline Invitational) in Nashville—team shot from the airline tournament weekend.",
+      "Two Frontier teams at the 2025 Boom Boom Cup in Nashville—an all-the-way run to the final and second place after a tight championship game. Great hockey with United and the rest of the aviation community; already looking forward to the next one.",
     slug: "boom-boom-cup-2025",
-    bodyHeading: "2025 Boom Boom Cup (Airline Invitational) — Nashville",
+    bodyHeading: "2025 Boom Boom Cup – Nashville, TN",
     bodyParagraphs: [
-      "The Frontier Airlines Hockey Club represented the airline at the 2025 Boom Boom Cup in Nashville, Tennessee. The invitational brings airline and aviation teams together for competitive hockey and camaraderie off the ice.",
-      "More photos and a full recap can be added here as they’re gathered from the weekend.",
+      "The Frontier Airlines Hockey Club returned to Nashville, Tennessee for the 2025 Boom Boom Cup, once again representing the airline at one of the premier aviation hockey tournaments. The invitational brings together airline and aviation teams from across the industry for a weekend of competitive hockey and strong camaraderie off the ice.",
+      "This year, Frontier showed up in full force with two teams, logging plenty of ice time and making a strong run all the way to the championship game, ultimately finishing in 2nd place after a tight final. Along the way, players stepped in to support other airlines—especially first-time participants—continuing the spirit of teamwork that defines the event.",
+      "We also enjoyed a great social skate with our friends from United Airlines and reconnected with teams from across the aviation community, including new additions like PSA Airlines and Southwest Airlines. While the competition is real, the tournament is ultimately about bringing aviation professionals together to share their passion for hockey.",
+      "Another outstanding event in Nashville—and we’re already looking forward to the next one.",
     ],
     galleryImageUrls: [
       "/images/boom-boom-cup-2025-jetblue-frontier.png",
