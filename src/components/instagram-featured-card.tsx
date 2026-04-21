@@ -3,7 +3,7 @@ import { INSTAGRAM_FEATURE_POST_URL } from "@/lib/instagram-feature";
 import { siteConfig } from "@/lib/site-config";
 
 const card =
-  "flex items-center justify-between gap-3 rounded-xl border border-amber-500/40 bg-gradient-to-br from-amber-950/55 via-zinc-900/50 to-zinc-950 px-4 py-3 shadow-lg shadow-amber-950/25 ring-1 ring-amber-500/20 transition hover:border-amber-400/50 hover:ring-amber-400/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500/80 sm:gap-4 sm:px-5 sm:py-3.5";
+  "flex flex-col gap-3 rounded-xl border border-amber-500/40 bg-gradient-to-br from-amber-950/55 via-zinc-900/50 to-zinc-950 px-4 py-3 shadow-lg shadow-amber-950/25 ring-1 ring-amber-500/20 transition hover:border-amber-400/50 hover:ring-amber-400/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500/80 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-5 sm:py-3.5";
 
 export function InstagramFeaturedCard() {
   return (
@@ -20,16 +20,16 @@ export function InstagramFeaturedCard() {
         />
 
         <div className="min-w-0">
-          <p className="truncate text-sm font-semibold leading-tight text-zinc-100">
+          <p className="text-sm font-semibold leading-tight text-zinc-100 sm:truncate">
             Follow {siteConfig.siteName} on Instagram
           </p>
-          <p className="mt-0.5 truncate text-xs leading-snug text-zinc-400">
+          <p className="mt-0.5 text-xs leading-snug text-zinc-400 sm:truncate">
             Game-day moments, highlights, and team updates.
           </p>
         </div>
       </div>
 
-      <span className="shrink-0 text-xs font-medium text-amber-400/95 transition group-hover:text-amber-300 sm:text-sm">
+      <span className="shrink-0 self-end text-xs font-medium text-amber-400/95 transition group-hover:text-amber-300 sm:self-auto sm:text-sm">
         View →
       </span>
     </a>

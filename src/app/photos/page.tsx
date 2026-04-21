@@ -21,14 +21,10 @@ export default function PhotosPage() {
         <h1 className="text-3xl font-bold tracking-tight text-zinc-50 sm:text-4xl">
           Past Events &amp; Photos
         </h1>
-        <p className="mt-4 text-base leading-relaxed text-zinc-400 sm:text-lg">
-          <span className="block min-w-0 whitespace-nowrap overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-            Take a look back at the season with highlights, photos, and game-day moments from{" "}
-            {siteConfig.siteName.replace(/ /g, "\u00A0")}.
-          </span>
-          <span className="block">
-            From big plays to team memories, it’s all captured here.
-          </span>
+        <p className="mt-4 text-pretty text-base leading-relaxed text-zinc-400 sm:text-lg">
+          Take a look back at the season with highlights, photos, and game-day
+          moments from {siteConfig.siteName.replace(/ /g, "\u00A0")}. From big
+          plays to team memories, it’s all captured here.
         </p>
       </header>
 

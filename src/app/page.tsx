@@ -114,7 +114,7 @@ export default function HomePage() {
             href="https://crewrules.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative mx-auto block w-1/2 max-w-2xl"
+            className="group relative mx-auto block w-full max-w-md px-2 sm:max-w-lg sm:px-0"
           >
             {/* eslint-disable-next-line @next/next/no-img-element -- sponsor asset; explicit dimensions not required */}
             <img

@@ -73,6 +73,7 @@ export const rosterPlayers: RosterPlayer[] = [
     jerseyNumber: 82,
     hockeyPosition: "Center, Defense (Right)",
     photoUrl: "/images/players/dennis-feldhausen.png",
+    nhlTeam: { name: "Pittsburgh Penguins", logoAbbr: "PIT" },
   },
   {
     id: "p-04",

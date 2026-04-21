@@ -26,7 +26,7 @@ export function PhotoGalleryCard({ item }: PhotoGalleryCardProps) {
   const photoCountLabel = `${photoCount} ${photoCount === 1 ? "photo" : "photos"}`;
 
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/60 shadow-lg shadow-black/20 transition-colors duration-150 hover:border-emerald-500/50">
+    <article className="flex h-full min-w-0 flex-col overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900/60 shadow-lg shadow-black/20 transition-colors duration-150 hover:border-emerald-500/50">
       {!item.omitCardCover ? (
         pond2024NaturalHeader ? (
           <div className="relative w-full">

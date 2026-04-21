@@ -1,7 +1,7 @@
 export function SiteFooter() {
   return (
-    <footer className="border-t border-zinc-800/80 bg-zinc-950/80">
-      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+    <footer className="border-t border-zinc-800/80 bg-zinc-950/80 pb-[env(safe-area-inset-bottom,0px)]">
+      <div className="mx-auto max-w-6xl py-8 ps-[max(1rem,env(safe-area-inset-left,0px))] pe-[max(1rem,env(safe-area-inset-right,0px))] sm:ps-[max(1.5rem,env(safe-area-inset-left,0px))] sm:pe-[max(1.5rem,env(safe-area-inset-right,0px))] lg:ps-[max(2rem,env(safe-area-inset-left,0px))] lg:pe-[max(2rem,env(safe-area-inset-right,0px))]">
         <p className="text-center text-sm text-zinc-500">
           © 2023–2026 F9 Hockey Club
           <span className="text-zinc-600"> · </span>

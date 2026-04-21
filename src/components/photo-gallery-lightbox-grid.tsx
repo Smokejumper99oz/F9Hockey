@@ -54,7 +54,7 @@ export function PhotoGalleryLightboxGrid({ images }: PhotoGalleryLightboxGridPro
 
       {openSrc ? (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 pt-[max(1rem,env(safe-area-inset-top,0px))] pb-[max(1rem,env(safe-area-inset-bottom,0px))] pl-[max(1rem,env(safe-area-inset-left,0px))] pr-[max(1rem,env(safe-area-inset-right,0px))] backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
           aria-label="Enlarged photo"
@@ -63,7 +63,7 @@ export function PhotoGalleryLightboxGrid({ images }: PhotoGalleryLightboxGridPro
           <button
             type="button"
             onClick={close}
-            className="absolute right-4 top-4 z-10 rounded-md border border-zinc-600 bg-zinc-900 px-3 py-1.5 text-sm font-medium text-zinc-200 hover:bg-zinc-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            className="absolute right-[max(1rem,env(safe-area-inset-right,0px))] top-[max(1rem,env(safe-area-inset-top,0px))] z-10 rounded-md border border-zinc-600 bg-zinc-900 px-3 py-1.5 text-sm font-medium text-zinc-200 hover:bg-zinc-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
           >
             Close
           </button>
@@ -72,7 +72,7 @@ export function PhotoGalleryLightboxGrid({ images }: PhotoGalleryLightboxGridPro
           <img
             src={openSrc}
             alt=""
-            className="max-h-[90vh] max-w-full object-contain shadow-2xl"
+            className="max-h-[min(90vh,100dvh-2rem)] max-w-full object-contain shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
         </div>
