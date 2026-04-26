@@ -15,8 +15,13 @@ export type PastPhotoEvent = {
   eventDate: string;
   location: string;
   cityState: string;
-  /** Supabase Storage public URL, or null for placeholder cover */
+  /** Supabase Storage public URL, or null for placeholder cover. Used for `/photos/[slug]` hero. */
   coverImageUrl: string | null;
+  /**
+   * When set, the `/photos` grid card image only (detail hero still uses `coverImageUrl`).
+   * Use when the large gallery hero and the small card should show different art.
+   */
+  gridCardImageUrl?: string | null;
   /**
    * CSS `object-position` for the gallery hero on `/photos/[slug]`.
    */
@@ -217,7 +222,10 @@ export const pastPhotoEvents: PastPhotoEvent[] = [
       "Our 1st Annual Clearwater Skate took place at Oldsmar Ice Arena. We faced off against the Drunken Clammers both days, with additional support from local beer league players, making for a competitive and fun couple of days on the ice.",
       "After the second skate, the team kept things going with a spontaneous after-skate gathering at First Officer Sven Folmer’s house, celebrating his birthday alongside teammates and fellow Frontier coworkers who joined the festivities.",
     ],
-    galleryImageUrls: ["/images/clearwater-1st-annual-gathering.png"],
+    galleryImageUrls: [
+      "/images/clearwater-1st-annual-gathering.png",
+      "/images/clearwater-1st-annual-ice-trio.png",
+    ],
   },
   {
     id: "gal-pond-hockey-2024",
@@ -227,9 +235,9 @@ export const pastPhotoEvents: PastPhotoEvent[] = [
     dateDisplayOverride: "January 26–28, 2024",
     location: "Lake Nokomis",
     cityState: "Minneapolis, MN",
-    coverImageUrl: "/images/pond-hockey-2024-usphc.png",
-    coverObjectPosition: "center top",
-    omitGalleryHero: true,
+    coverImageUrl: "/images/pond-hockey-2024-main.png",
+    gridCardImageUrl: "/images/pond-hockey-2024-usphc.png",
+    coverObjectPosition: "center 48%",
     shortDescription:
       "Our first team outing with the new squad: Lake Nokomis for the 2024 U.S. Pond Hockey Championships—cut short when warm weather canceled the Golden Weekend and the ice turned to slush. We’re guaranteed a spot in 2025.",
     slug: "pond-hockey-2024",
@@ -240,7 +248,17 @@ export const pastPhotoEvents: PastPhotoEvent[] = [
       "Despite the outdoor setting, our games were played indoors using traditional pond hockey rules—no goalies and pond-style nets—which made for a fast-paced and unique experience.",
       "With the cancellation, our team secured a guaranteed entry for the 2025 tournament—so we’ll be back.",
     ],
-    galleryImageUrls: [],
+    galleryImageUrls: [
+      "/images/pond-hockey-2024-07.png",
+      "/images/pond-hockey-2024-01.png",
+      "/images/pond-hockey-2024-02.png",
+      "/images/pond-hockey-2024-03.png",
+      "/images/pond-hockey-2024-04.png",
+      "/images/pond-hockey-2024-05.png",
+      "/images/pond-hockey-2024-06.png",
+      "/images/pond-hockey-2024-08.png",
+      "/images/pond-hockey-2024-09.png",
+    ],
   },
 ];
 

@@ -17,7 +17,7 @@ export function PhotoGalleryCard({ item }: PhotoGalleryCardProps) {
     item.coverCardObjectPosition ?? item.coverObjectPosition;
   const cardImageUrl = item.useCardCoverPlaceholder
     ? null
-    : item.coverImageUrl;
+    : (item.gridCardImageUrl ?? item.coverImageUrl);
   const pond2024NaturalHeader =
     !item.omitCardCover &&
     item.id === POND_2024_GALLERY_CARD_ID &&
