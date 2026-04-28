@@ -233,7 +233,7 @@ export const rosterPlayers: RosterPlayer[] = [
     jerseyNumber: 87,
     hockeyPosition: "Forward",
     photoUrl: "/images/players/matt-siegrist.png",
-    nhlTeam: { name: "Tampa Bay Lightning", logoAbbr: "TBL" },
+    nhlTeam: { name: "Colorado Avalanche", logoAbbr: "COL" },
   },
   {
     id: "p-16",
