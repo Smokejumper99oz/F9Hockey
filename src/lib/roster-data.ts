@@ -204,6 +204,16 @@ export const rosterPlayers: RosterPlayer[] = [
     nhlTeam: { name: "Colorado Avalanche", logoAbbr: "COL" },
   },
   {
+    id: "p-22",
+    name: "Henry Reed",
+    roleType: "Captain",
+    crewBase: "MCO",
+    jerseyNumber: 43,
+    hockeyPosition: "Forward",
+    photoUrl: "/images/players/henry-reed.png",
+    nhlTeam: { name: "Florida Panthers", logoAbbr: "FLA" },
+  },
+  {
     id: "p-13",
     name: "Dalton Sears",
     roleType: "First Officer",
@@ -274,15 +284,6 @@ export const rosterPlayers: RosterPlayer[] = [
     hockeyPosition: "Left Wing",
     photoUrl: null,
     nhlTeam: { name: "Buffalo Sabres", logoAbbr: "BUF" },
-  },
-  {
-    id: "p-22",
-    name: "Henry Reed",
-    roleType: "Captain",
-    crewBase: "MCO",
-    jerseyNumber: 43,
-    hockeyPosition: "Forward",
-    photoUrl: null,
   },
   {
     id: "p-23",
