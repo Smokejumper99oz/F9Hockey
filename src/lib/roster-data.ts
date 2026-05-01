@@ -59,7 +59,7 @@ export const rosterPlayers: RosterPlayer[] = [
     id: "p-02",
     name: "Sven Folmer",
     roleType: "Captain",
-    crewBase: "ALT",
+    crewBase: "ATL",
     jerseyNumber: 92,
     hockeyPosition: "Left Wing/Center",
     photoUrl: "/images/players/sven-folmer.png",
